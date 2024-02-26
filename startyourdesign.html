@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="design your own sports car">
+        <meta name="keywords" content="Dreamstyle, Porsche, Cadillac, Aston Martin, Bentley">
+        <meta name="author" content="Kharis Greear">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Start Your Design</title>
+    </head>
+
+    <body>
+        <header>
+            <h2>DREAMSTYLE</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="ourbasemodels.html">Base Models</a></li>
+                    <li><a href="startyourdesign.html">Design</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <h1><em>START YOUR DESIGN</em></h1>
+
+            <section>
+                <h2>START YOUR ENGINE...</h2>
+
+                <form id="carDesign">
+
+                    <label for="carBody">LUXURY BRAND</label>
+                    <br>
+                    <select id="carBody" name="carBody">
+                        <option value="porscheCayenne">Porsche Cayenne ($20,000)</option>
+                        <option value="porscheTaycan">POrsche Taycan ($20,000)</option>
+                        <option value="cadillacEscalade">Cadillac Escalade ($20,000)</option>
+                        <option value="cadillacCT5">Cadillac CT5 ($20,000)</option>
+                        <option value="astonMartinVantage">Aston Martin Vantage ($20,000)</option>
+                        <option value="astonMartinSuper">Aston Martin DBS Superleggera ($20,000)</option>
+                        <option value="bentleyContinentalGT">Bentley Continental GT ($20,000)</option>
+                        <option value="bentleyBentayga">Bentley Bentayga ($20,000)</option>
+                    </select><br>
+
+                    <br>
+
+                    <label for="carColor">COLOR</label>
+                    <br>
+                    <select id="carColor" name="carColor">
+                        <option value="purple">Purple (+$500)</option>
+                        <option value="silver">Silver (+$500)</option>
+                        <option value="black">Black (+$500)</option>
+                    </select><br>
+
+                    <br>
+
+                    <label for="tint">TINT</label>
+                    <div>*Our models feature a 20% tint</div>
+                    <select id="tint" name="tint">
+                        <option value="yes">Yes (+$400)</option>
+                        <option value="no" selected>No (+$0)</option>
+                        
+                    </select><br>
+
+                    <br>
+
+                    <label for="rimColor">RIM COLOR</label>
+                    <br>
+                    <select id="rimColor" name="rimColor">
+                        <option value="silver">Silver (+$200)</option>
+                        <option value="black">Black (+$200)</option>
+                        <option value="gold">Gold (+$200)</option>
+                    </select><br>
+
+                    <br>
+
+                    <label for="spoiler">SPOILER</label>
+                    <br>
+                    <select id="spoiler" name="spoiler">
+                        <option value="pedestal">Pedestal (+$200)</option>
+                        <option value="ducktailRear">Ducktail Rear (+$200)</option>
+                        <option value="active">Active (+$200)</option>
+                        <option value="none" selected>None (+$0)</option>
+                    </select><br>
+
+                    <br>
+
+                    <label for="louver">LOUVER</label>
+                    <div>*Only offered for sedan models</div>
+                    <select id="louver" name="louver">
+                        <option value="slatted">Slatted (+$400)</option>
+                        <option value="customDesign">Custom Design (+$800)</option>
+                        <option value="none" selected>None (+$0)</option>
+                    </select><br>
+
+                    <br>
+
+                    <label for="racingStripe">RACING STRIPE</label>
+                    <br>
+                    <select id="racingStripe" name="racingStripe">
+                        <option value="black">Black (+$200)</option>
+                        <option value="white">White (+$200)</option>
+                        <option value="none" selected>None (+$0)</option>
+                    </select><br>
+
+                    <br>
+
+                    <button type="button" onclick="calculate()">SUBMIT DESIGN</button>
+                    <!--WILL NEED TO WRITE JS CALCULATE FUNCTION-->
+
+                </form>
+
+                <p>Your DREAMSTYLE estimate: $+<id="totalPrice"></id></p>
+            </section>
+
+
+                <h3>GIVE US FEEDBACK</h3>
+                <form id="contactForm">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Name" required><br>
+            
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br>
+
+                    <div class="rating">
+                        <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                        <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                        <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                        <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                        <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                    </div><br>
+            
+                    <label for="comments"></label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Any comments"></textarea><br>
+            
+                    <button type="submit">Submit</button>
+                </form>
+        </main>
+
+        <footer>
+            <h1>YOUR RIDE, YOUR WAY</h1>
+            <h3>Company Info</h3>
+            <address>Dreamstyle<br>
+                1000 Body Way<br>
+                AERO, NC 20000<br>
+            </address>
+            <section>
+                <a href="mailto:contact@dreamstyle.com">contact@dreamstyle.com</a><br>
+                <a href="tel:+19193217448">(919)321-7448</a>
+            </section>
+            <section>
+                <p>copyright &copy; 2024 Dreamstyle</p>
+            </section>
+        </footer>
+
+    </body>
+
+</html>
