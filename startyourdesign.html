@@ -2,14 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
         <meta name="description" content="design your own sports car">
         <meta name="keywords" content="Dreamstyle, Porsche, Cadillac, Aston Martin, Bentley">
         <meta name="author" content="Kharis Greear">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Start Your Design</title>
+
+        <style> /*changing all font on page to inter from external font sheet*/
+            body, main, footer {
+                font-family: 'Inter', sans-serif;
+            }
+        </style>
     </head>
 
- <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWDHVRVFCZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -21,146 +29,231 @@
 
     <body>
         <header>
-            <h2>DREAMSTYLE</h2>
+            <h1 id="title"><em>DREAMSTYLE</em></h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+                <ul id="navigation">
+                    <li><a href="startyourdesign.html">Start Your Design</a></li>
+                    <li><a href="ourbasemodels.html">Our Base Models</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="ourbasemodels.html">Base Models</a></li>
-                    <li><a href="startyourdesign.html">Design</a></li>
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
+            <h2>START YOUR DESIGN</h2>
         </header>
 
         <main>
 
-            <h1><em>START YOUR DESIGN</em></h1>
+            <h2 id="startDesignHeader"><em>START YOUR ENGINE...</em></h2>
 
             <section>
-                <h2>START YOUR ENGINE...</h2>
 
                 <form id="carDesign">
 
-                    <label for="carBody">LUXURY BRAND</label>
-                    <br>
-                    <select id="carBody" name="carBody">
-                        <option value="porscheCayenne">Porsche Cayenne ($20,000)</option>
-                        <option value="porscheTaycan">POrsche Taycan ($20,000)</option>
+                    <h3>LUXURY BRAND</h3>
+                    <div class="options">
+                        <input type="radio" id="posrcheCayenne" name="brand" value="20,000">
+                        <label for="porscheCayenne">Porsche Cayenne</label><br>
+
+                        <input type="radio" id="porscheTaycan" name="brand" value="20,000">
+                        <label for="porscheTaycan">Porsche Taycan</label><br>
+
+                        <input type="radio" id="cadillacEscalade" name="brand" value="20,000">
+                        <label for="cadillacEscalade">Cadillac Escalade</label><br>
+
+                        <input type="radio" id="cadillacCT5" name="brand" value="20,000">
+                        <label for="cadillacCT5">Cadillac CT5</label><br>
+
+                        <input type="radio" id="astonMartinVantage" name="brand" value="20,000">
+                        <label for="astonMartinVantage">Aston Martin Vantage</label><br>
+
+                        <input type="radio" id="astonMartinSuper" name="brand" value="20,000">
+                        <label for="astonMartinSuper">Aston Martin Superleggera</label><br>
+
+                        <input type="radio" id="bentleyContinentalGT" name="brand" value="20,000">
+                        <label for="bentleyContinentalGT">Bentley Continental GT</label><br>
+
+                        <input type="radio" id="bentleyBentayga" name="brand" value="20,000">
+                        <label for="bentleyBentayga">Bentley Bentayga</label><br>
+                    </div>
+                    <!--<select id="carBody" name="carBody">
+                        <option value="porscheTaycan">Porsche Taycan ($20,000)</option>
                         <option value="cadillacEscalade">Cadillac Escalade ($20,000)</option>
                         <option value="cadillacCT5">Cadillac CT5 ($20,000)</option>
                         <option value="astonMartinVantage">Aston Martin Vantage ($20,000)</option>
                         <option value="astonMartinSuper">Aston Martin DBS Superleggera ($20,000)</option>
                         <option value="bentleyContinentalGT">Bentley Continental GT ($20,000)</option>
                         <option value="bentleyBentayga">Bentley Bentayga ($20,000)</option>
-                    </select><br>
-
+                    </select><br> -->
                     <br>
 
-                    <label for="carColor">COLOR</label>
-                    <br>
-                    <select id="carColor" name="carColor">
+                    <h3>COLOR</h3>
+                    <div class="options">
+                        <input type="radio" id="blackBody" name="bodyColor" value="500">
+                        <label for="blackBody">Black</label><br>
+
+                        <input type="radio" id="silverBody" name="bodyColor" value="500">
+                        <label for="silverBody">Silver</label><br>
+
+                        <input type="radio" id="purpleBody" name="bodyColor" value="500">
+                        <label for="purpleBody">Purple</label><br>
+                    </div>
+                    <!--<select id="carColor" name="carColor">
                         <option value="purple">Purple (+$500)</option>
                         <option value="silver">Silver (+$500)</option>
                         <option value="black">Black (+$500)</option>
-                    </select><br>
-
+                    </select><br>-->
                     <br>
 
-                    <label for="tint">TINT</label>
-                    <div>*Our models feature a 20% tint</div>
-                    <select id="tint" name="tint">
+                    <h3>TINT</h3>
+                    <p>*Our models feature a 20% tint</p>
+                    <div class="options">
+                        <input type="radio" id="tintYes" name="tint" value="400">
+                        <label for="tintYes">Yes</label><br>
+
+                        <input type="radio" id="tintNo" name="tint" value="0">
+                        <label for="tintNo">No</label><br>
+                    </div>
+                    <!--<select id="tint" name="tint">
                         <option value="yes">Yes (+$400)</option>
                         <option value="no" selected>No (+$0)</option>
                         
-                    </select><br>
-
+                    </select><br>-->
                     <br>
 
-                    <label for="rimColor">RIM COLOR</label>
-                    <br>
-                    <select id="rimColor" name="rimColor">
+                    <h3>RIM COLOR</h3>
+                    <div class="options">
+                        <input type="radio" id="blackRim" name="rimColor" value="600">
+                        <label for="blackRim">Black</label><br>
+
+                        <input type="radio" id="silverRim" name="rimColor" value="600">
+                        <label for="silverRim">Silver</label><br>
+
+                        <input type="radio" id="goldRim" name="rimColor" value="600">
+                        <label for="goldRim">Gold</label><br>
+                    </div>
+                    <!--<select id="rimColor" name="rimColor">
                         <option value="silver">Silver (+$200)</option>
                         <option value="black">Black (+$200)</option>
                         <option value="gold">Gold (+$200)</option>
-                    </select><br>
-
+                    </select><br>-->
                     <br>
 
-                    <label for="spoiler">SPOILER</label>
-                    <br>
-                    <select id="spoiler" name="spoiler">
+                    <h3>SPOILER</h3>
+                    <div class="options">
+                        <input type="radio" id="pedestal" name="spoiler" value="200">
+                        <label for="pedestal">Pedestal</label><br>
+
+                        <input type="radio" id="ducktailRear" name="spoiler" value="200">
+                        <label for="ducktailRear">Ducktail Rear</label><br>
+
+                        <input type="radio" id="active" name="spoiler" value="200">
+                        <label for="active">Active</label><br>
+
+                        <input type="radio" id="none1" name="spoiler" value="0">
+                        <label for="none1">None</label><br>
+                    </div>
+                    <!--<select id="spoiler" name="spoiler">
                         <option value="pedestal">Pedestal (+$200)</option>
                         <option value="ducktailRear">Ducktail Rear (+$200)</option>
                         <option value="active">Active (+$200)</option>
                         <option value="none" selected>None (+$0)</option>
-                    </select><br>
-
+                    </select><br>-->
                     <br>
 
-                    <label for="louver">LOUVER</label>
-                    <div>*Only offered for sedan models</div>
-                    <select id="louver" name="louver">
+                    <h3>LOUVER</h3>
+                    <p>*Only offered for sedan models</p>
+                    <div class="options">
+                        <input type="radio" id="slatted" name="louver" value="400">
+                        <label for="slatted">Slatted</label><br>
+
+                        <input type="radio" id="custom" name="louver" value="800">
+                        <label for="custom">Custom Design</label><br>
+
+                        <input type="radio" id="none2" name="louver" value="0">
+                        <label for="none2">None</label><br>
+                    </div>
+                    <!--<select id="louver" name="louver">
                         <option value="slatted">Slatted (+$400)</option>
                         <option value="customDesign">Custom Design (+$800)</option>
                         <option value="none" selected>None (+$0)</option>
-                    </select><br>
-
+                    </select><br>-->
                     <br>
 
-                    <label for="racingStripe">RACING STRIPE</label>
-                    <br>
-                    <select id="racingStripe" name="racingStripe">
+                    <h3>RACING STRIPE</h3>
+                    <div class="options">
+                        <input type="radio" id="blackStripe" name="stripe" value="200">
+                        <label for="blackStripe">Black</label><br>
+
+                        <input type="radio" id="whiteStripe" name="stripe" value="200">
+                        <label for="whiteStripe">White</label><br>
+
+                        <input type="radio" id="none3" name="stripe" value="0">
+                        <label for="none3">None</label><br>
+                    </div>
+                    <!--<select id="racingStripe" name="racingStripe">
                         <option value="black">Black (+$200)</option>
                         <option value="white">White (+$200)</option>
                         <option value="none" selected>None (+$0)</option>
-                    </select><br>
-
+                    </select><br>-->
                     <br>
 
-                    <button type="button" onclick="calculate()">SUBMIT DESIGN</button>
-                    <!--WILL NEED TO WRITE JS CALCULATE FUNCTION-->
-
+                    <div id="submitButtonContainer">
+                        <button id="submitButton">SUBMIT DESIGN</button>
+                        <!--WILL NEED TO WRITE JS CALCULATE FUNCTION-->
+                    </div>
                 </form>
 
-                <p>Your DREAMSTYLE estimate: $+<id="totalPrice"></id></p>
+                <div id="bannerContainer">
+                    <p>Your DREAMSTYLE estimate: <span id="estimateContainer">$<span id="totalEstimate">0</span></span></p>
+                    </div>
+                </div>
             </section>
 
+                <div id="feedbackContainer">
+                    <p>GIVE US FEEDBACK!</p>
+                    <form id="contactForm">
+                        <div id="nameNum">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Name" required><br>
+                    
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br>
+                        </div>
 
-                <h3>GIVE US FEEDBACK</h3>
-                <form id="contactForm">
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" placeholder="Name" required><br>
-            
-                    <label for="phone"></label>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br>
-
-                    <div class="rating">
-                        <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
-                        <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
-                        <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
-                        <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
-                        <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
-                    </div><br>
-            
-                    <label for="comments"></label>
-                    <textarea id="comments" name="comments" rows="4" placeholder="Any comments"></textarea><br>
-            
-                    <button type="submit">Submit</button>
-                </form>
+                        <div class="rating">
+                            <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                            <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                            <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                            <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                            <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                        </div><br>
+                
+                        <label for="comments"></label>
+                        <textarea id="comments" name="comments" rows="8" cols="45" placeholder="Any comments"></textarea>
+                        <br>
+                        <div id="feedbackSubmit">
+                            <button id="feedbackButton" >Submit</button>
+                        </div>
+                    </form>
+                </div>
         </main>
 
         <footer>
-            <h1>YOUR RIDE, YOUR WAY</h1>
+            <h1 id="tagline">YOUR RIDE, YOUR WAY</h1>
             <h3>Company Info</h3>
-            <address>Dreamstyle<br>
-                1000 Body Way<br>
-                AERO, NC 20000<br>
-            </address>
-            <section>
-                <a href="mailto:contact@dreamstyle.com">contact@dreamstyle.com</a><br>
-                <a href="tel:+19193217448">(919)321-7448</a>
-            </section>
-            <section>
+            <br>
+            <div id="contact">
+                <address>Dreamstyle<br>
+                    1000 Body Way<br>
+                    AERO, NC 20000<br>
+                </address>
+                <br>
+                <section>
+                    <a href="mailto:contact@dreamstyle.com">contact@dreamstyle.com</a><br>
+                    <a href="tel:+19193217448">(919) 321-7448</a>
+                </section>
+            </div>
+            <section id="copyright">
                 <p>copyright &copy; 2024 Dreamstyle</p>
             </section>
         </footer>

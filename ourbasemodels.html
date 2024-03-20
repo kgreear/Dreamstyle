@@ -2,14 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
         <meta name="description" content="design your own sports car">
         <meta name="keywords" content="Dreamstyle, Porsche, Cadillac, Aston Martin, Bentley">
         <meta name="author" content="Kharis Greear">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OUR BASE MODELS</title>
+
+        <style> /*changing all font on page to inter from external font sheet*/
+            body, main, footer {
+                font-family: 'Inter', sans-serif;
+            }
+        </style>
     </head>
 
-<!-- Google tag (gtag.js) -->
+   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWDHVRVFCZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -21,75 +29,112 @@
 
     <body>
         <header>
-            <h2>DREAMSTYLE</h2>
+            <h1 id="title"><em>DREAMSTYLE</em></h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+                <ul id="navigation">
+                    <li><a href="startyourdesign.html">Start Your Design</a></li>
+                    <li><a href="ourbasemodels.html">Our Base Models</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="ourbasemodels.html">Base Models</a></li>
-                    <li><a href="startyourdesign.html">Design</a></li>
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
+            <h2>OUR BASE MODELS</h2>
         </header>
 
         <main>
-            <h1><em>OUR BASE MODELS</em></h1>
-
             <section>
-                <h2><em><a href="https://www.porsche.com/usa/">PORSCHE</a></em></h2>
-                <img src="porschecayenne.jpeg" alt="porsche cayenne">
-                <img src="porschetaycan.jpeg" alt="porsche taycan">
-                <p>
-                    Porsche, a German automotive icon, embodies precision engineering and unparalleled performance. Founded in 1931 by Ferdinand Porsche, the company's mission revolves around crafting sports cars that blend innovation, design, and driving pleasure. Porsche's top models showcase the brand's dedication to high-performance and style. The <a href="https://www.porsche.com/usa/models/cayenne/">Porsche Cayenne</a>, a luxury SUV, seamlessly marries versatility with high-performance capabilities. Combining spacious interiors with powerful engines, the Cayenne has redefined expectations in the luxury SUV sphere, offering a thrilling driving experience while not compromising on ample space. The <a href="https://www.porsche.com/usa/models/taycan/">Porsche Taycan</a> stands at the forefront of the brand's innovative endeavors in terms of electric performance. As Porsche's first all-electric vehicle, the Taycan exemplifies the fusion of sustainability and high-performance driving, proving that electric cars can be both environmentally conscious and exhilarating. 
-                </p>
-                <a href="startyourdesign.html">START DESIGN</a>
+                <h2 class="brand"><em><a href="https://www.porsche.com/usa/">PORSCHE</a></em></h2>
+                <div class="carContent">
+                    <div class="carVisual">
+                        <img src="images/PorscheCayenne.jpg" alt="porsche cayenne" style="width: 300px; height: auto;">
+                        <p>The Porsche Cayenne</p><br>
+                        <img src="images/PorscheTaycan.jpg" alt="porsche taycan" style="width: 300px; height: auto;">
+                        <p>The Porsche Taycan</p><br>
+                    </div>
+                    <div class="carDescription">
+                        <p>
+                            Porsche, a German automotive icon, embodies precision engineering and unparalleled performance. Founded in 1931 by Ferdinand Porsche, the company's mission revolves around crafting sports cars that blend innovation, design, and driving pleasure. Porsche's top models showcase the brand's dedication to high-performance and style. The <a href="https://www.porsche.com/usa/models/cayenne/">Porsche Cayenne</a>, a luxury SUV, seamlessly marries versatility with high-performance capabilities. Combining spacious interiors with powerful engines, the Cayenne has redefined expectations in the luxury SUV sphere, offering a thrilling driving experience while not compromising on ample space. The <a href="https://www.porsche.com/usa/models/taycan/">Porsche Taycan</a> stands at the forefront of the brand's innovative endeavors in terms of electric performance. As Porsche's first all-electric vehicle, the Taycan exemplifies the fusion of sustainability and high-performance driving, proving that electric cars can be both environmentally conscious and exhilarating. 
+                        </p>
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    <a class="startButton" href="startyourdesign.html">START DESIGN</a>
+                </div>
             </section>
 
             <section>
-                <h2><em><a href="https://www.cadillac.com/">CADILLAC</a></em></h2>
-                <img src="cadillacescalade.jpeg" alt="cadillac escalade">
-                <img src="cadillacct5.jpeg" alt="cadillac ct5">
-                <p>
-                    Cadillac, an American luxury automotive brand, has been know for its sophistication and innovation since 1902. With a mission to redefine the driving experience, Cadillac aims to provide drivers with cutting-edge technology, distinctive design, and unparalleled comfort. The brand's commitment to luxury is exemplified in its two top performing models. The <a href="https://www.cadillac.com/suvs/escalade">Cadillac Escalade</a>, a flagship SUV, represents the epitome of opulence and performance. Known for its commanding presence and luxurious interiors, the Escalade has become an icon of prestige in the SUV market. For those seeking a balance of performance and elegance, the <a href="https://www.cadillac.com/sedans/ct5?ppc=MICROSOFT_700000001296812_71700000107683867_58700008307886121_p75481546728&d_src=313715&d_adsrc=3876787&d_campaign=71700000107683867&d_site=MICROSOFT&d_adgroup=58700008307886121&d_keyword=cadillac+ct5&gclick=62839499e1af1f3debfef123160bbe62&gclid=62839499e1af1f3debfef123160bbe62&gclsrc=3p.ds&&d_src=3876787&d_adsrc=4568612&d_campaign=71700000107683867&d_site=MICROSOFT&d_adgroup=58700008307886121&d_keyword=cadillac+ct5&gclick=&msclkid=62839499e1af1f3debfef123160bbe62">Cadillac CT5</a> serves as a testament to the brand's commitment to dynamic driving experiences. This midsize luxury sedan blends advanced technology with refined styling, delivering a sophisticated yet exhilarating ride. 
-                </p>
-                <a href="startyourdesign.html">START DESIGN</a>
+                <h2 class="brand"><em><a href="https://www.cadillac.com/">CADILLAC</a></em></h2>
+                <div class="carContent">
+                    <div class="carVisual">
+                        <img src="images/CadillacEscalade.jpg" alt="cadillac escalade" style="width: 300px; height: auto;">
+                        <p>The Cadillac Escalade</p><br>
+                        <img src="images/CadillacCT5.jpg" alt="cadillac ct5" style="width: 300px; height: auto;">
+                        <p>The Cadillac CT5</p><br>
+                    </div>
+                    <p class="carDescription">
+                        Cadillac, an American luxury automotive brand, has been know for its sophistication and innovation since 1902. With a mission to redefine the driving experience, Cadillac aims to provide drivers with cutting-edge technology, distinctive design, and unparalleled comfort. The brand's commitment to luxury is exemplified in its two top performing models. The <a href="https://www.cadillac.com/suvs/escalade">Cadillac Escalade</a>, a flagship SUV, represents the epitome of opulence and performance. Known for its commanding presence and luxurious interiors, the Escalade has become an icon of prestige in the SUV market. For those seeking a balance of performance and elegance, the <a href="https://www.cadillac.com/sedans/ct5?ppc=MICROSOFT_700000001296812_71700000107683867_58700008307886121_p75481546728&d_src=313715&d_adsrc=3876787&d_campaign=71700000107683867&d_site=MICROSOFT&d_adgroup=58700008307886121&d_keyword=cadillac+ct5&gclick=62839499e1af1f3debfef123160bbe62&gclid=62839499e1af1f3debfef123160bbe62&gclsrc=3p.ds&&d_src=3876787&d_adsrc=4568612&d_campaign=71700000107683867&d_site=MICROSOFT&d_adgroup=58700008307886121&d_keyword=cadillac+ct5&gclick=&msclkid=62839499e1af1f3debfef123160bbe62">Cadillac CT5</a> serves as a testament to the brand's commitment to dynamic driving experiences. This midsize luxury sedan blends advanced technology with refined styling, delivering a sophisticated yet exhilarating ride. 
+                    </p>
+                </div>
+                <div class="buttonContainer">
+                    <a class="startButton" href="startyourdesign.html">START DESIGN</a>
+                </div>
             </section>
 
             <section>
-                <h2><em><a href="https://www.astonmartin.com/en-us/">ASTON MARTIN</a></em></h2>
-                <img src="astonmartinvantage.jpeg" alt="aston martin vantage">
-                <img src="astonmartindbssuperleggera.jpeg" alt="aston martin dbs superleggera">
-                <p>
-                    Aston Martin, an icon of British luxury and performance, has been crafting iconic sports cars since 1913. With a mission to create vehicles that embody timeless elegance and thrilling driving experiences, Aston Martin stands as a symbol of automotive excellence. Among its top models, the <a href="https://www.astonmartin.com/en-us/models/vantage-coupe">Aston Martin Vantage</a>, known for its dynamic design and agile performance, exemplifies the brand's commitment to creating exhilarating sports cars. For those seeking the pinnacle of luxury and speed, the <a href="https://astonmartin.com.au/en-us/models/dbs-superleggera">Aston Martin DBS Superleggera</a> combines breathtaking aesthetics with high-performance capabilities. 
-                </p>
-                <a href="startyourdesign.html">START DESIGN</a>
+                <h2 class="brand"><em><a href="https://www.astonmartin.com/en-us/">ASTON MARTIN</a></em></h2>
+                <div class="carContent">
+                    <div class="carVisual">
+                        <img src="images/AMVantage.jpg" alt="aston martin vantage" style="width: 300px; height: auto;">
+                        <p>The Aston Martin Vantage</p><br>
+                        <img src="images/AMSuperleggera.jpg" alt="aston martin dbs superleggera" style="width: 300px; height: auto;">
+                        <p>The Aston Martin Superleggera</p><br>
+                    </div>
+                    <p class="carDescription">
+                        Aston Martin, an icon of British luxury and performance, has been crafting iconic sports cars since 1913. With a mission to create vehicles that embody timeless elegance and thrilling driving experiences, Aston Martin stands as a symbol of automotive excellence. Among its top models, the <a href="https://www.astonmartin.com/en-us/models/vantage-coupe">Aston Martin Vantage</a>, known for its dynamic design and agile performance, exemplifies the brand's commitment to creating exhilarating sports cars. For those seeking the pinnacle of luxury and speed, the <a href="https://astonmartin.com.au/en-us/models/dbs-superleggera">Aston Martin DBS Superleggera</a> combines breathtaking aesthetics with high-performance capabilities. While other car manufacturers have moved on to machine automation, Aston Martin prides itself for its by-hand-assembly, even the smallest parts.
+                    </p>
+                </div>
+                <div class="buttonContainer">
+                    <a class="startButton" href="startyourdesign.html">START DESIGN</a>
+                </div>
             </section>
 
             <section>
-                <h2><em><a href="https://www.bentleymotors.com/en.html/">BENTLEY</a></em></h2>
-                <img src="bentleycontinentalgt.jpeg" alt="bentley continental gt">
-                <img src="bentleybentayga.jpeg" alt="bentley bentayga">
-                <p>
-                    Bentley, another embolism of British luxury and craftsmanship since its establishment in 1919, is dedicated to creating exceptional cars for high class individuals. The brand's mission revolves around delivering unparalleled refinement and performance. Among its top models, the <a href="https://www.bentleymotors.com/en/models/continental-gt/continental-gt.html">Bentley Continental GT</a> stands as a pinnacle of opulence with iconic features such as its distinctive matrix grille, sleek LED headlights, and a powerful, handcrafted engine. The <a href="https://www.bentleymotors.com/en/models/bentayga.html">Bentley Bentayga</a>, an embodiment of sophistication in the SUV segment, combines lavish interiors with powerful performance, redefining the standards for luxury SUVs. It showcases a commanding presence with its matrix headlights and a meticulously crafted interior adorned with premium materials. Bentley continues to set the bar for automotive elegance, producing cars that epitomize exclusivity and unparalleled craftsmanship.
-                </p>
-                <a href="startyourdesign.html">START DESIGN</a>
+                <h2 class="brand"><em><a href="https://www.bentleymotors.com/en.html/">BENTLEY</a></em></h2>
+                <div class="carContent">
+                    <div class="carVisual">
+                        <img src="images/BentleyGT.jpg" alt="bentley continental gt" style="width: 300px; height: auto;">
+                        <p>The Bentley Continental GT</p><br>
+                        <img src="images/BentleyBentayga.jpg" alt="bentley bentayga" style="width: 300px; height: auto;">
+                        <p>The Bentley Bentayga</p><br>
+                    </div>
+                    <p class="carDescription">
+                        Bentley, another embolism of British luxury and craftsmanship since its establishment in 1919, is dedicated to creating exceptional cars for high class individuals. The brand's mission revolves around delivering unparalleled refinement and performance. Among its top models, the <a href="https://www.bentleymotors.com/en/models/continental-gt/continental-gt.html">Bentley Continental GT</a> stands as a pinnacle of opulence with iconic features such as its distinctive matrix grille, sleek LED headlights, and a powerful, handcrafted engine. The <a href="https://www.bentleymotors.com/en/models/bentayga.html">Bentley Bentayga</a>, an embodiment of sophistication in the SUV segment, combines lavish interiors with powerful performance, redefining the standards for luxury SUVs. It showcases a commanding presence with its matrix headlights and a meticulously crafted interior adorned with premium materials. Bentley continues to set the bar for automotive elegance, producing cars that epitomize exclusivity and unparalleled craftsmanship.
+                    </p>
+                </div>
+                <div class="buttonContainer">
+                    <a class="startButton" href="startyourdesign.html">START DESIGN</a>
+                </div>
             </section>
 
 
         </main>
 
         <footer>
-            <h1>YOUR RIDE, YOUR WAY</h1>
+            <h1 id="tagline">YOUR RIDE, YOUR WAY</h1>
             <h3>Company Info</h3>
-            <address>Dreamstyle<br>
-                1000 Body Way<br>
-                AERO, NC 20000<br>
-            </address>
-            <section>
-                <a href="mailto:contact@dreamstyle.com">contact@dreamstyle.com</a><br>
-                <a href="tel:+19193217448">(919)321-7448>(919)321-7448</a>
-            </section>
-            <section>
+            <br>
+            <div id="contact">
+                <address>Dreamstyle<br>
+                    1000 Body Way<br>
+                    AERO, NC 20000<br>
+                </address>
+                <br>
+                <section>
+                    <a href="mailto:contact@dreamstyle.com">contact@dreamstyle.com</a><br>
+                    <a href="tel:+19193217448">(919) 321-7448</a>
+                </section>
+            </div>
+            <section id="copyright">
                 <p>copyright &copy; 2024 Dreamstyle</p>
             </section>
         </footer>

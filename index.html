@@ -2,51 +2,68 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <!--importing external sheet of fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"> 
         <meta name="description" content="design your own sports car">
         <meta name="keywords" content="Dreamstyle, Porsche, Cadillac, Aston Martin, Bentley">
         <meta name="author" content="Kharis Greear">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-      </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWDHVRVFCZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <style> /*changing all font on page to inter from external font sheet*/
+            body, main, footer {
+                font-family: 'Inter', sans-serif;
+            }
+        </style>
+        
+    </head>
 
-  gtag('config', 'G-NWDHVRVFCZ');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWDHVRVFCZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NWDHVRVFCZ');
+    </script>
+
     <body>
         <header>
-            <h2>DREAMSTYLE</h2>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="ourbasemodels.html">Base Models</a></li>
-                    <li><a href="startyourdesign.html">Design</a></li>
-                </ul>
-            </nav>
+            <div id="top">
+                <h1 id="title"><em>DREAMSTYLE</em></h1>
+                <nav>
+                    <ul id="navigation">
+                        <li><a href="startyourdesign.html">Start Your Design</a></li>
+                        <li><a href="ourbasemodels.html">Our Base Models</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <main>
-            <img src="website face image.jpeg" alt="homescreen">
+        <main id="carImage">
+            <img src="images/WebsiteFaceImage.jpg" alt="homescreen" style="width: 100%; height: auto;">
         </main>
 
         <footer>
-            <h1>YOUR RIDE, YOUR WAY</h1>
-            <h3>Company Info</h3>
-            <address>Dreamstyle<br>
-                1000 Body Way<br>
-                AERO, NC 20000<br>
-            </address>
-            <section>
-                <a href="mailto:contact@dreamstyle.com">contact@dreamstyle.com</a><br>
-                <a href="tel:+19193217448">(919)321-7448>(919)321-7448</a>
-            </section>
-            <section>
+            <h1 id="tagline">YOUR RIDE, YOUR WAY</h1>
+            <h3><em>Company Info</em></h3>
+            <br>
+            <div id="contact">
+                <address>Dreamstyle<br>
+                    1000 Body Way<br>
+                    AERO, NC 20000<br>
+                </address>
+                <br>
+                <section>
+                    <a href="mailto:contact@dreamstyle.com">contact@dreamstyle.com</a><br>
+                    <a href="tel:+19193217448">(919) 321-7448</a>
+                </section>
+            </div>
+            <section id="copyright">
                 <p>copyright &copy; 2024 Dreamstyle</p>
             </section>
         </footer>
