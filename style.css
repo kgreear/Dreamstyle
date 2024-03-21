@@ -66,6 +66,7 @@ body header h2 {
 #founderImage {
     position: relative;
     flex: 0 0 auto; /* Don't grow, don't shrink */ 
+    width: 300px;
 }
     
 #founderLabel {
