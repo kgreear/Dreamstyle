@@ -75,15 +75,6 @@
                         <input type="radio" id="bentleyBentayga" name="brand" value="20,000">
                         <label for="bentleyBentayga">Bentley Bentayga</label><br>
                     </div>
-                    <!--<select id="carBody" name="carBody">
-                        <option value="porscheTaycan">Porsche Taycan ($20,000)</option>
-                        <option value="cadillacEscalade">Cadillac Escalade ($20,000)</option>
-                        <option value="cadillacCT5">Cadillac CT5 ($20,000)</option>
-                        <option value="astonMartinVantage">Aston Martin Vantage ($20,000)</option>
-                        <option value="astonMartinSuper">Aston Martin DBS Superleggera ($20,000)</option>
-                        <option value="bentleyContinentalGT">Bentley Continental GT ($20,000)</option>
-                        <option value="bentleyBentayga">Bentley Bentayga ($20,000)</option>
-                    </select><br> -->
                     <br>
 
                     <h3>COLOR</h3>
@@ -97,11 +88,6 @@
                         <input type="radio" id="purpleBody" name="bodyColor" value="500">
                         <label for="purpleBody">Purple</label><br>
                     </div>
-                    <!--<select id="carColor" name="carColor">
-                        <option value="purple">Purple (+$500)</option>
-                        <option value="silver">Silver (+$500)</option>
-                        <option value="black">Black (+$500)</option>
-                    </select><br>-->
                     <br>
 
                     <h3>TINT</h3>
@@ -113,11 +99,6 @@
                         <input type="radio" id="tintNo" name="tint" value="0">
                         <label for="tintNo">No</label><br>
                     </div>
-                    <!--<select id="tint" name="tint">
-                        <option value="yes">Yes (+$400)</option>
-                        <option value="no" selected>No (+$0)</option>
-                        
-                    </select><br>-->
                     <br>
 
                     <h3>RIM COLOR</h3>
@@ -131,11 +112,6 @@
                         <input type="radio" id="goldRim" name="rimColor" value="600">
                         <label for="goldRim">Gold</label><br>
                     </div>
-                    <!--<select id="rimColor" name="rimColor">
-                        <option value="silver">Silver (+$200)</option>
-                        <option value="black">Black (+$200)</option>
-                        <option value="gold">Gold (+$200)</option>
-                    </select><br>-->
                     <br>
 
                     <h3>SPOILER</h3>
@@ -152,12 +128,6 @@
                         <input type="radio" id="none1" name="spoiler" value="0">
                         <label for="none1">None</label><br>
                     </div>
-                    <!--<select id="spoiler" name="spoiler">
-                        <option value="pedestal">Pedestal (+$200)</option>
-                        <option value="ducktailRear">Ducktail Rear (+$200)</option>
-                        <option value="active">Active (+$200)</option>
-                        <option value="none" selected>None (+$0)</option>
-                    </select><br>-->
                     <br>
 
                     <h3>LOUVER</h3>
@@ -172,11 +142,6 @@
                         <input type="radio" id="none2" name="louver" value="0">
                         <label for="none2">None</label><br>
                     </div>
-                    <!--<select id="louver" name="louver">
-                        <option value="slatted">Slatted (+$400)</option>
-                        <option value="customDesign">Custom Design (+$800)</option>
-                        <option value="none" selected>None (+$0)</option>
-                    </select><br>-->
                     <br>
 
                     <h3>RACING STRIPE</h3>
@@ -190,16 +155,11 @@
                         <input type="radio" id="none3" name="stripe" value="0">
                         <label for="none3">None</label><br>
                     </div>
-                    <!--<select id="racingStripe" name="racingStripe">
-                        <option value="black">Black (+$200)</option>
-                        <option value="white">White (+$200)</option>
-                        <option value="none" selected>None (+$0)</option>
-                    </select><br>-->
                     <br>
 
                     <div id="submitButtonContainer">
-                        <button id="submitButton">SUBMIT DESIGN</button>
-                        <!--WILL NEED TO WRITE JS CALCULATE FUNCTION-->
+                        <button type="button" id="submitButton">SUBMIT DESIGN</button>
+                        <script src="script.js"></script>
                     </div>
                 </form>
 
@@ -214,22 +174,22 @@
                     <form id="contactForm">
                         <div id="nameNum">
                             <label for="name"></label>
-                            <input type="text" id="name" name="name" placeholder="Name" required><br>
+                            <input type="text" id="name" name="input1" placeholder="Name" required><br>
                     
-                            <label for="phone"></label>
-                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br>
+                            <label for="number"></label>
+                            <input type="tel" id="number" name="input2" placeholder="Phone Number" required><br>
                         </div>
 
                         <div class="rating">
-                            <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
-                            <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
-                            <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
-                            <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
-                            <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                            <span><input type="radio" name="input3" id="str5" value="5"><label for="str5"></label></span>
+                            <span><input type="radio" name="input3" id="str4" value="4"><label for="str4"></label></span>
+                            <span><input type="radio" name="input3" id="str3" value="3"><label for="str3"></label></span>
+                            <span><input type="radio" name="input3" id="str2" value="2"><label for="str2"></label></span>
+                            <span><input type="radio" name="input3" id="str1" value="1"><label for="str1"></label></span>
                         </div><br>
                 
                         <label for="comments"></label>
-                        <textarea id="comments" name="comments" rows="8" cols="45" placeholder="Any comments"></textarea>
+                        <textarea id="comments" name="input4" rows="8" cols="45" placeholder="Any comments"></textarea>
                         <br>
                         <div id="feedbackSubmit">
                             <button id="feedbackButton" >Submit</button>
